@@ -1,0 +1,17 @@
+
+[
+{
+    "model": "users.roles",
+    "pk": "3b746e25-d6e3-444f-9447-35c9787c97af",
+    "fields": {
+        "name": "Store Manager"
+    }
+},
+{
+    "model": "users.roles",
+    "pk": "ad2dbb46-ef5a-4abf-a03c-2cba8275d29f",
+    "fields": {
+        "name": "Store Assistant"
+    }
+}
+]

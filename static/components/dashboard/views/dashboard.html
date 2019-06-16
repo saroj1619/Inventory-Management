@@ -1,0 +1,60 @@
+<!-- Content Wrapper. Contains page content -->
+  <div class="col-sm-10 col-md-offset-1" >
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        I.M App
+        <small>Dashboard</small>
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Info boxes -->
+      <div class="row" ng-init="dashboardScope.products()">
+        <div class="col-sm-12 pointer-links">
+            <div ng-if="!multi_role_status && role_type=='Store Assistant'">
+                 <button ng-click="dashboardScope.getAdminAccess()" class="btn btn-danger">Admin Access Request</button>
+            </div>
+          <div ng-if="multi_role_status || role_type=='Store Manager'">
+            <button ui-sref="additem" class="btn btn-primary">Add New Item</button>
+            <button ui-sref="view_user" class="btn btn-default">View Users</button>
+            <button ui-sref="view_request" class="btn btn-primary">View Requests</button>
+          </div>
+
+          <table id="productTable" class="table">
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Product Name</th>
+                <th>Vendor</th>
+                <th>MRP</th>
+                <th>Batch No.</th>
+                <th>Batch Date</th>
+                <th>Quantity</th>
+                <th>Status</th>
+                <th ng-if="multi_role_status || role_type=='Store Manager'">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="product_info in dashboardScope.data">
+                <td ng-bind="$index+1"></td>
+                <td ng-bind="product_info.product_name"></td>
+                <td ng-bind="product_info.vendor"></td>
+                <td ng-bind="product_info.mrp"></td>
+                <td ng-bind="product_info.batch_no"></td>
+                <td ng-bind="product_info.batch_date"></td>
+                <td ng-bind="product_info.quantity"></td>
+                <td ng-if="product_info.status==0">Pending</td>
+                <td ng-if="product_info.status==1">Approved</td>
+                <td ng-if="multi_role_status || role_type=='Store Manager'"><a ui-sref="edit({id:product_info.product_id})">Edit</a>/<a ng-click="dashboardScope.deleteitem(product_info.product_id)">Delete</a></td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->

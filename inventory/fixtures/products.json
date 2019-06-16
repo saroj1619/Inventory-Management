@@ -1,0 +1,29 @@
+[
+  {
+    "model": "inventory.products",
+    "pk": "6eb1579e-22ed-4e0d-a066-42950b2887eb",
+     "fields": {
+        "product_name": "Saridon",
+        "vendor": "Sar",
+        "mrp": "20.50",
+        "batch_no": "1234",
+        "batch_date": "2019-06-10",
+        "quantity": "20",
+        "status": "0"
+    }
+},
+
+  {
+    "model": "inventory.products",
+    "pk": "a6462902-aa1a-4412-928c-8b942c76ea9a",
+     "fields": {
+        "product_name": "Foracort",
+        "vendor": "Cipla",
+        "mrp": "240",
+        "batch_no": "1235",
+        "batch_date": "2019-06-14",
+        "quantity": "200",
+        "status": "1"
+    }
+}
+]

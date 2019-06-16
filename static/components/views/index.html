@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="invApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IMA</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/static/bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="/static/bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="/static/dist/css/skins/_all-skins.min.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+
+  <!--angular material-->
+    <link rel="stylesheet" href="/static/bower_components/angular-material/angular-material.min.css">
+
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="/static/components/css/inv-mng-app.css">
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini" style="">
+<div>
+
+
+  <ui-view></ui-view>
+
+  <div class="control-sidebar-bg"></div>
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/static/dist/js/adminlte.min.js"></script>
+<!--Angular scripts starts-->
+<!--dependencies starts-->
+
+<script src="/static/node_modules/angular/angular.min.js"></script>
+<script src="/static/node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+<script src="/static/node_modules/angular-smart-table/dist/smart-table.min.js"></script>
+<script src="/static/node_modules/angular-cookies/angular-cookies.min.js"></script>
+<script src="/static/node_modules/ngstorage/ngStorage.min.js"></script>
+
+<!--dependencies ends-->
+
+<script src="/static/bower_components/angular-material/angular-material.min.js"></script>
+<script src="/static/bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="/static/bower_components/angular-aria/angular-aria.min.js"></script>
+
+
+<!--main admin app starts-->
+<script src="/static/components/mainApp.js"></script>
+<!--main admin app ends-->
+
+<!--Login User Starts-->
+<script src="/static/components/login/userLogin.js"></script>
+<script src="/static/components/login/loginController/loginController.js"></script>
+<script src="/static/components/login/loginService/loginService.js"></script>
+<!--Login User Ends-->
+
+<!-- Dashboard starts-->
+<script src="/static/components/dashboard/dashboardApp.js"></script>
+<script src="/static/components/dashboard/dashboardController/dashboardController.js"></script>
+<script src="/static/components/dashboard/dashboardService/dashboardService.js"></script>
+<!-- Dashboard ends-->
+
+
+<!--Angular scripts ends-->
+<script>
+
+</script>
+
+</body>
+</html>
+

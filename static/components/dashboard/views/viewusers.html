@@ -1,0 +1,37 @@
+<div class="col-sm-10 col-sm-offset-1">
+    <section class="content-header">
+      <h1>
+        I.M App
+        <small>User Details</small>
+      </h1>
+    </section>
+<section class="content"  >
+    <div class="row" ng-init="dashboardScope.viewusers()">
+        <div class="col-sm-12 pointer-links">
+            <button ui-sref="additem" class="btn btn-primary">Add New Item</button>
+            <button ui-sref="view_request" class="btn btn-primary">View Requests</button>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>User Name</th>
+                        <th>User ID</th>
+                        <th>Action</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="user_data in dashboardScope.userdata">
+                        <td ng-bind="$index+1"></td>
+                        <td ng-bind="user_data.name"></td>
+                        <td ng-bind="user_data.id"></td>
+                        <td><button class="btn btn-warning" ng-click="dashboardScope.adminaccess(user_data)">Provide Admin Access</button></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
+</div>

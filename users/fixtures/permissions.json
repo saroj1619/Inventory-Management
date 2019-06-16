@@ -1,0 +1,31 @@
+
+[
+{
+    "model": "users.Permissions",
+    "pk": "8a361dc9-0036-419e-88c9-9924d9d12b55",
+    "fields": {
+        "name": "create"
+    }
+},
+{
+    "model": "users.Permissions",
+    "pk": "e867ef7e-02ba-4670-b6f0-1c52ba25b404",
+    "fields": {
+        "name": "edit"
+    }
+},
+{
+    "model": "users.Permissions",
+    "pk": "320b8ce9-7982-41d0-80d5-1909a772a007",
+    "fields": {
+        "name": "read"
+    }
+},
+{
+    "model": "users.Permissions",
+    "pk": "3751ec3e-e68e-469d-a52f-3b435e88fca5",
+    "fields": {
+        "name": "delete"
+    }
+}
+]

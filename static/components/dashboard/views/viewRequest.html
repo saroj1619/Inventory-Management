@@ -1,0 +1,36 @@
+<div class="col-sm-10 col-sm-offset-1">
+    <section class="content-header">
+      <h1>
+        I.M App
+        <small>User Details</small>
+      </h1>
+    </section>
+<section class="content"  >
+    <div class="row" ng-init="dashboardScope.getRequest()">
+        <div class="col-sm-12 pointer-links">
+            <button ui-sref="additem" class="btn btn-primary">Add New Item</button>
+            <button ui-sref="dashboard" class="btn btn-primary">Dashboard</button>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>User Name</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="user_data in dashboardScope.requestData">
+                        <td ng-bind="$index+1"></td>
+                        <td ng-bind="user_data.user"></td>
+                        <td ng-bind="user_data.email"></td>
+                        <td><button class="btn btn-warning" ng-click="dashboardScope.approveRequest(user_data)">Approve</button></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
+</div>

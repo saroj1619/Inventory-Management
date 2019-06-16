@@ -1,0 +1,26 @@
+[
+{
+    "model": "users.user_role",
+    "pk": "03cd06e0-2c56-466f-b14a-00f6b7d73e76",
+    "fields": {
+        "role_id": "3b746e25-d6e3-444f-9447-35c9787c97af",
+        "user_id": "914db470-1259-49bb-81d6-6c70d97bfa1e"
+    }
+},
+{
+    "model": "users.user_role",
+    "pk": "f01f85a9-7e05-4206-ab03-821d662c7bef",
+     "fields": {
+       "role_id": "ad2dbb46-ef5a-4abf-a03c-2cba8275d29f",
+        "user_id": "451b95a7-f4e0-4fcb-a573-20fba9fcfe38"
+    }
+},
+  {
+    "model": "users.user_role",
+    "pk": "e813a397-8d49-47dc-a3f9-880b198c086c",
+     "fields": {
+       "role_id": "ad2dbb46-ef5a-4abf-a03c-2cba8275d29f",
+        "user_id": "ec811060-e295-4e2c-b5e1-240462f9ca55"
+    }
+}
+]
