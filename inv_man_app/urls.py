@@ -26,8 +26,8 @@ urlpatterns = [
     path('api/products/', include('inventory.urls')),
     path('api/users/', include('users.urls')),
     path('api-fetch-userdetails', UsersDetails.as_view()),
-    path('api/getadminaccess/', UsersDetails.as_view()),
+    path('api/requestadminaccess/', UsersDetails.as_view()),
     path('api/request/', RequestDetails.as_view()),
 
-
+    #getAdminAccess
 ]

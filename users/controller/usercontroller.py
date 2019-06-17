@@ -41,7 +41,7 @@ class UsersDetails(APIView):
     def post(self,request):
         try:
 
-            user_id = request.data.get('id')
+            user_id = request.user.id
 
             user_obj = Users.objects.get(id=user_id)
 

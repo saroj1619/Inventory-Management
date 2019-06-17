@@ -1,8 +1,19 @@
-<div>
-    <div class="container">
+<div class="col-sm-10 col-md-offset-1">
+    <section class="content-header">
+      <h1>
+        I.M App
+        <small>Add Item</small>
+      </h1>
+    </section>
+    <section class="content">
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-2" >
-                <h2>Add Item</h2>
+            <div class="col-sm-12 pointer-links">
+            <div>
+                <button ui-sref="view_user" class="btn btn-primary">View Users</button>
+                <button ui-sref="view_request" class="btn btn-primary">View Requests</button>
+
+                <div class="text-right"><button ng-click="dashboardScope.logout()" class="btn btn-danger">Logout</button></div><br><br>
+
                 <form class="form-horizontal">
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="name">Product Name</label>
@@ -68,8 +79,9 @@
                     {{dashboardScope.successMsg }}. <a ui-sref="dashboard">Go to Dashboard</a>
                 </div>
             </div>
+            </div>
         </div>
 
-    </div>
+    </section>
 
 </div>

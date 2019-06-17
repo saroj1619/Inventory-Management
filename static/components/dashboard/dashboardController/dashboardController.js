@@ -1,6 +1,6 @@
 angular.module('dashboardControllerApp',['ngStorage'])
 
-.controller('dashboardController',function(dashboardService,$location,$localStorage,$rootScope){
+.controller('dashboardController',function(dashboardService,$location,$localStorage,$rootScope,$cookies){
 
     var dashboardScope = this;
 
@@ -139,7 +139,7 @@ angular.module('dashboardControllerApp',['ngStorage'])
         console.log("ID:",data.id)
         var success = function(response){
             console.log("Admin Access Success:", response)
-            dashboardScope.getRequest ()
+//            dashboardScope.getRequest ()
         }
 
         var failure = function(error){
@@ -147,6 +147,21 @@ angular.module('dashboardControllerApp',['ngStorage'])
         }
 
         dashboardService.adminaccess(data).then(success, failure)
+    }
+
+    dashboardScope.requestAdminAccess = function(id){
+
+        console.log("Request ID:",id)
+        var success = function(response){
+            console.log("Request Admin Access Success:", response)
+            dashboardScope.getRequest()
+        }
+
+        var failure = function(error){
+            console.log("Request Admin Access Failure:", error)
+        }
+
+        dashboardService.requestadminaccess(id).then(success, failure)
     }
 
     dashboardScope.approveRequest = function(data){
@@ -176,6 +191,11 @@ angular.module('dashboardControllerApp',['ngStorage'])
         dashboardService.request().then(success, failure)
     }
 
+     dashboardScope.logout = function(){
+        localStorage.clear()
+        $cookies.put("jwt", undefined);
+        $location.path('/')
+    }
 
     return dashboardScope;
 

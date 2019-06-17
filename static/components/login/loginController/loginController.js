@@ -20,6 +20,11 @@ angular.module('loginControllerApp',[])
         }
 
         var failure = function(error){
+    dashboardScope.logout = function(){
+        localStorage.clear()
+        delete $cookies["jwt"]
+        $location.path('/')
+    }
             console.log(error)
         }
 
@@ -57,8 +62,6 @@ angular.module('loginControllerApp',[])
         loginUserService.login(payload).then(success,failure)
 
     }
-
-
 
     return userLoginScope;
 

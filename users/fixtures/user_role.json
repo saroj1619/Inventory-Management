@@ -22,5 +22,13 @@
        "role_id": "ad2dbb46-ef5a-4abf-a03c-2cba8275d29f",
         "user_id": "ec811060-e295-4e2c-b5e1-240462f9ca55"
     }
+},
+  {
+    "model": "users.user_role",
+    "pk": "fc0e0ac0-66bd-439b-a720-1ca27c36022b",
+     "fields": {
+       "role_id": "ad2dbb46-ef5a-4abf-a03c-2cba8275d29f",
+        "user_id": "93dc8fa2-41f6-4c11-996e-fe8396664dc3"
+    }
 }
 ]

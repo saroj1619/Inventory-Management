@@ -14,14 +14,16 @@
       <div class="row" ng-init="dashboardScope.products()">
         <div class="col-sm-12 pointer-links">
             <div ng-if="!multi_role_status && role_type=='Store Assistant'">
-                 <button ng-click="dashboardScope.getAdminAccess()" class="btn btn-danger">Admin Access Request</button>
+                 <button ng-click="dashboardScope.requestAdminAccess(id)" class="btn btn-danger">Admin Access Request</button>
             </div>
           <div ng-if="multi_role_status || role_type=='Store Manager'">
             <button ui-sref="additem" class="btn btn-primary">Add New Item</button>
             <button ui-sref="view_user" class="btn btn-default">View Users</button>
             <button ui-sref="view_request" class="btn btn-primary">View Requests</button>
           </div>
+          <div class="text-right"><button ng-click="dashboardScope.logout()" class="btn btn-danger">Logout</button></div>
 
+          <br><br>
           <table id="productTable" class="table">
             <thead>
               <tr>

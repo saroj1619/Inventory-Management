@@ -29,7 +29,11 @@ angular.module('dashboardServiceApp',[])
     }
 
     service.adminaccess = function(data){
-        return $http.post('api/getadminaccess/',data)
+        return $http.post('api/users/',data)
+    }
+
+    service.requestadminaccess = function(id){
+        return $http.post('api/requestadminaccess/',id)
     }
 
     service.request = function(){

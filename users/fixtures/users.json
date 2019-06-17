@@ -25,5 +25,14 @@
         "password": "pbkdf2_sha256$150000$xsZeZsj7RWij$RH4jwGC4Uy6TPpF+L1NoCCHFWHWMC6bN/k0k4qM4VAg=",
         "email": "abhishek@gmail.com"
     }
+},
+  {
+    "model": "users.users",
+    "pk": "93dc8fa2-41f6-4c11-996e-fe8396664dc3",
+     "fields": {
+        "username": "vishnu",
+        "password": "pbkdf2_sha256$150000$xsZeZsj7RWij$RH4jwGC4Uy6TPpF+L1NoCCHFWHWMC6bN/k0k4qM4VAg=",
+        "email": "vishnu@gmail.com"
+    }
 }
 ]
